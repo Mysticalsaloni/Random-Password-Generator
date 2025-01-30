@@ -16,9 +16,15 @@
             <span class="material-symbols-outlined" id="copyIcon">content_copy</span>
         </div>
 
-        <label for="inputSlider">Password Length:</label>
+        <div class="sliderContainer">
+            <label for="inputSlider">Password Length:</label>
+            <div class="sliderValueBox">
+                <span id="sliderValue"></span>
+                <span class="fixedEight"></span>
+            </div>
+        </div>
         <input type="range" min="1" max="30" value="8" id="inputSlider" aria-label="Password Length Slider" />
-        <span id="sliderValue">8</span>
+        
 
         <!-- Checkbox Section -->
         <div class="row">

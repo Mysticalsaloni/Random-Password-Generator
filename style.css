@@ -48,6 +48,37 @@ body {
     z-index: 2;
 }
 
+.sliderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sliderValueBox {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+#sliderValue {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.fixedEight {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8); 
+    position: absolute;
+    top: -12px; 
+    right: 0;
+}
+
+
 .PassBox {
     background-color: #fff;
     color: #333;
@@ -95,3 +126,41 @@ body {
 .genBtn:hover {
     background-color: #0056b3;
 }
+
+
+/* media query */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        background-color: rgb(234, 168, 168);
+        color: black;
+    }
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .PassBox, .genBtn {
+        width: 100%;
+        font-size: 16px;
+        color: red;
+        background-color: rgb(226, 212, 90);
+    }
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sliderContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #sliderValue {
+        font-size: 20px;
+    }
+    .fixedEight {
+        font-size: 14px;
+        top: -10px;
+    }
+}
+
